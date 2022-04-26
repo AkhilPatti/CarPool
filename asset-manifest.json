@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/CarPool/static/css/main.d2face67.css",
+    "main.js": "/CarPool/static/js/main.012d270a.js",
+    "static/js/787.a4a672d7.chunk.js": "/CarPool/static/js/787.a4a672d7.chunk.js",
+    "index.html": "/CarPool/index.html",
+    "main.d2face67.css.map": "/CarPool/static/css/main.d2face67.css.map",
+    "main.012d270a.js.map": "/CarPool/static/js/main.012d270a.js.map",
+    "787.a4a672d7.chunk.js.map": "/CarPool/static/js/787.a4a672d7.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d2face67.css",
+    "static/js/main.012d270a.js"
+  ]
+}
