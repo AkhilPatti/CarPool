@@ -9,7 +9,7 @@ function SignUpPage()
     
     return<>
         <div className="Login flex">
-        <img src="Data/homepage.png" style={imageStyle}></img>
+        <img src={require("../Data/homepage.png")} style={imageStyle}></img>
         
         <div style={{width:"30%", backgroundColor:"#ffc319"}}>
             <div style={{height:"58%"}}>
@@ -23,7 +23,7 @@ function SignUpPage()
                 </form>
                 <p style={{marginTop:"15px",color:"white", margin:"auto", width:"fit-content"}}>Already a member?<Link to='/login' style={{fontWeight:"bold",paddingLeft:"10px",color:"white",textDecoration:"none"}}>L<span style={{borderBottom:"solid 2px white"}}>OG </span>IN</Link></p>
             </div>
-            <img src="Data/building.png" style={{height:"32.5%",width:"100%"}}/>
+            <img src={require("../Data/building.png")} style={{height:"32.5%",width:"100%"}}/>
         </div>
         </div>
         </>
