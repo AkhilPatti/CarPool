@@ -1,0 +1,92 @@
+
+input[type=text]:focus {
+    outline: none;
+  }
+  input
+  {
+      margin-top:5px;
+      font-size:15px;
+      border:none;
+      border-bottom:blue solid 2px;
+  }
+  label,#tagLine
+  {
+      font-size:x-small;
+      font-weight: bold;
+      color:silver
+  }
+  input::placeholder { 
+    font-size:14px;
+  }
+  label{
+      margin-top: 20px;
+  }
+.TimeButtons
+{
+    width:fit-content;
+    padding:3px;
+    border-radius: 8px;
+    background-color: white;
+    border-color: purple;
+    border-width:2px;
+    margin-right:12px;
+    margin-top:5px;
+}
+.TimeButtons:hover
+{
+    background-color: purple;
+    color: white;
+}
+.slider
+{
+    position:absolute;
+    cursor:pointer;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    background-color: purple;
+    transition: .4s;
+    border-radius:25px;
+    height:30px;
+    width:60px;
+}
+.toggle
+{
+    position:relative;
+    display:inline-block;
+    width: fit-content;
+    height: fit-content;
+
+}
+.slider input {display:none}
+.slider:before{
+    position: absolute;
+    content:'';
+    background-color: white;
+    transition:0.4s;
+    height:24px;
+    width:24px;
+    bottom:3px;
+    border-radius:40px;
+}
+
+input:checked+.slider
+{
+    background-color: orange;
+}
+
+input:checked+.slider::before
+{
+    transform :translateX(30px);
+}
+
+button[type="submit"]
+{
+    font-size: large;
+    font-weight: 600;
+    padding-top: 6px;
+    padding-bottom:6px;
+    border-radius: 20px;
+    border:none;
+}

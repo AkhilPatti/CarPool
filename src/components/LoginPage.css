@@ -26,6 +26,8 @@
     color:white;
     height:6vh;
     width:30%;
+    display:block;
+    margin:auto;
     font-weight: 700;
     border: none;
     border-radius: 25px;
