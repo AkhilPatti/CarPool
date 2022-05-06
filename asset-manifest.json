@@ -1,15 +1,17 @@
 {
   "files": {
-    "main.css": "/CarPool/static/css/main.d2face67.css",
-    "main.js": "/CarPool/static/js/main.012d270a.js",
+    "main.css": "/CarPool/static/css/main.63f32a28.css",
+    "main.js": "/CarPool/static/js/main.838c56c3.js",
     "static/js/787.a4a672d7.chunk.js": "/CarPool/static/js/787.a4a672d7.chunk.js",
+    "static/media/rideoptionsbg.png": "/CarPool/static/media/rideoptionsbg.eb6aac97aa7592762e0e.png",
+    "static/media/homepage.png": "/CarPool/static/media/homepage.ce4b53896b55c64011c5.png",
     "index.html": "/CarPool/index.html",
-    "main.d2face67.css.map": "/CarPool/static/css/main.d2face67.css.map",
-    "main.012d270a.js.map": "/CarPool/static/js/main.012d270a.js.map",
+    "main.63f32a28.css.map": "/CarPool/static/css/main.63f32a28.css.map",
+    "main.838c56c3.js.map": "/CarPool/static/js/main.838c56c3.js.map",
     "787.a4a672d7.chunk.js.map": "/CarPool/static/js/787.a4a672d7.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.d2face67.css",
-    "static/js/main.012d270a.js"
+    "static/css/main.63f32a28.css",
+    "static/js/main.838c56c3.js"
   ]
 }
