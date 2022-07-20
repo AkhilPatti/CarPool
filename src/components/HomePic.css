@@ -1,0 +1,15 @@
+#mainPicture
+{
+    font-weight:800;
+    font-size:15vh;
+    display:flex;
+    flex-direction: column;
+    background-image: url("../Data/homebg.png");
+    background-repeat: no-repeat;
+    background-size: 70vw 50vh;
+    width:70vw;
+    padding-left: 3vw;
+    padding-top:  1vh;
+    height:99vh;
+    background-position: bottom;
+}
