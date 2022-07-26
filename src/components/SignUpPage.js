@@ -1,14 +1,20 @@
 //import {variables} from '../Variables';
 import React from "react";
 import ReactDOM from 'react-dom';
-
+import HomePic from "./HomePic";
+import IconButton from "@material-ui/core/IconButton";
+import InputLabel from "@material-ui/core/InputLabel";
+import Visibility from "@material-ui/icons/Visibility";
+import InputAdornment from "@material-ui/core/InputAdornment";
+import VisibilityOff from "@material-ui/icons/VisibilityOff";
 import './SignUpPage.css';
-import {Link} from 'react-router-dom';
+import {Link, useNavigate} from 'react-router-dom';
 import { useState } from 'react';
 import LoginPage from "./LoginPage";
 import {Route} from 'react-router-dom';
+import { Icon } from "@material-ui/core";
+import Input from "@material-ui/core/Input";
 function SignUpPage()
-//export class SignUp extends React.Component
 {
             /*constructor(props){
                 super(props);
@@ -17,6 +23,8 @@ function SignUpPage()
             const [password,setPassword]=useState();
             const [confirmpassword,setConfirmPassword]=useState();
             const [message,setMessage]=useState();
+            const [showPassword,setShowPassword]=useState(false);
+            let navigate=useNavigate();
             React.useEffect(() => {
                 if(message==undefined)
                 {
@@ -26,11 +34,18 @@ function SignUpPage()
                 if(!regex.test(email))
                 {
                     alert("please enter A valid Email");
+                    setMessage(()=>undefined);
+                    return;
                 }
-                console.log("HEllo buddies");
-                console.log(message);
-                <Route exact path="/signup" element={<LoginPage />} />
-                var messageBlock=document.getElementById("messageBlock");
+                if(message=="Registered Successfully"){
+                navigate('/login');
+                setMessage(()=>undefined);}
+            else
+            {alert(message);
+            setMessage(()=>undefined);
+            return;
+        }
+            var messageBlock=document.getElementById("messageBlock");
         if(message!=undefined)
         {
         
@@ -41,6 +56,10 @@ function SignUpPage()
               }, 3000);*/
               alert(message);
         }}, [message])
+        const handleShowPassword = ()=>
+        {
+            setShowPassword(!showPassword);
+        }
             function SubmitForm()
             {
                 /*React.useEffect(()=>{console.log("just stop");alert("am here");})*/
@@ -49,6 +68,13 @@ function SignUpPage()
                     alert("confirm Password and password don't match");
                     return
                 }
+                //let regex= new RegExp("^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])(?=.*[@#$%^&-+=()])(?=\\S+$).{8, 20}$");
+                if(password.length<8)
+                {
+                    alert("Please Enter a Strong Password");
+                    return;
+                }
+                
             
                 const requestOptions={
                     method : 'POST',
@@ -78,9 +104,9 @@ function SignUpPage()
     //render(){
     return<>
         <div className="Login flex">
-        <img src={require("../Data/homepage.png")} style={{height:"99vh",width: "70%"}}></img>
+        <HomePic/>
         
-        <div style={{width:"30%", backgroundColor:"rgba(255,172,25,255)"}}>
+        <div id="signUpLeftContent"style={{width:"30%", backgroundColor:"rgba(255,172,25,255)"}}>
         <div><p id="messageBlock" style={{fontSize:"10px"}}>{message}</p></div>
             <div style={{height:"58%"}}>
             
@@ -88,7 +114,7 @@ function SignUpPage()
                 <form className="LoginForm">
                 
                     <input type="text" className="inputbox" placeholder="Enter Email Id" id="email" onChange={e=>setEmail(e.target.value)}/>
-                    <input type="password" className="inputbox" placeholder="Enter Password" id="password" onChange={e=>setPassword(e.target.value)} />
+                    <Input  style={{backgroundColor:"white",width:"74%", fontSize:"20px"}} className="inputbox" type={showPassword ? "text" : "password"} endAdornment={<InputAdornment position="end" style={{marginLeft:"1px"}}><Icon  style={{cursor:"pointer"}}onClick={handleShowPassword}>{showPassword ? <VisibilityOff/>:<Visibility/>}</Icon></InputAdornment>}  placeholder="Enter Password" id="password" onChange={e=>setPassword(e.target.value)} />
                     <input type="password" className="inputbox" placeholder="Confirm Password" id="confirmPassword" onChange={e=>setConfirmPassword(e.target.value)}/>
                 </form>
                 <button className="signUp-submit-btn" onClick={()=>SubmitForm()}>Submit</button>
@@ -97,9 +123,6 @@ function SignUpPage()
             <img src={require("../Data/building.png")} style={{height:"34%",width:"100%"}}/>
         </div>
         </div>
-        
         </>
-    
-
 }
 export  default SignUpPage

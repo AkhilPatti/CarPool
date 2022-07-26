@@ -1,4 +1,13 @@
-
+/*#BookARideBody
+{
+    /*background-image: url("../Data/applicationbg.png");*/
+    /*background-repeat: no-repeat;
+    background-position: bottom;
+    height: 100vh;
+    width:100vw;
+    padding:3vh;
+    padding-top:1vh;
+}*/
 input[type=text]:focus {
     outline: none;
   }
@@ -42,10 +51,11 @@ input[type=text]:focus {
     position:absolute;
     cursor:pointer;
     top:0;
-    left:0;
+    left:100px;
     right:0;
+    padding-left: 5px;
     bottom:0;
-    background-color: purple;
+    background-color: orange;
     transition: .4s;
     border-radius:25px;
     height:30px;
@@ -59,7 +69,7 @@ input[type=text]:focus {
     height: fit-content;
 
 }
-.slider input {display:none}
+/*.slider input {display:none}*/
 .slider:before{
     position: absolute;
     content:'';
@@ -73,7 +83,7 @@ input[type=text]:focus {
 
 input:checked+.slider
 {
-    background-color: orange;
+    background-color: purple;
 }
 
 input:checked+.slider::before
@@ -81,12 +91,43 @@ input:checked+.slider::before
     transform :translateX(30px);
 }
 
-button[type="submit"]
+#CardSubmitBtn
 {
     font-size: large;
     font-weight: 600;
     padding-top: 6px;
     padding-bottom:6px;
-    border-radius: 20px;
+    border-radius: 40px;
+    height: 40px;
     border:none;
+    color:white;
+    cursor:pointer;
+    background-color:orange;
+    width:100px;
+}
+#next
+{
+    margin-top: 0%;
+    margin-bottom: 0%;
+    margin-left:auto;
+    cursor: pointer;
+    height: 40px;
+    font-size: large;
+    color: purple;
+}
+#Content
+{
+    padding-left: 40px;
+    padding-top:20px;
+    padding-right : 40px; 
+}
+#BookARideBody
+{
+    background-image: url("../Data/applicationbg.png");
+    background-repeat: no-repeat;
+    background-position:bottom;
+    /*background-size: 100v;*/
+    background-size: 100vw 50vh;
+    height: 96vh;
+    width: 99vw;
 }

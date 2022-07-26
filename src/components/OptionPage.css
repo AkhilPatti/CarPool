@@ -4,6 +4,27 @@
     width: 100vw;
     /*background-size: cover;*/
     /*background: no-repeat;*/
+    
+}
+#FormBody
+{
+    display:flex;
+    flex-direction:column;
+}
+#FormBody>input[type=text]
+{
+    padding-top:10px;
+}
+#FormBody>button[type=submit]
+{
+    cursor:pointer;
+    border-radius: 0%;
+    background-color: orange;
+}
+#FormBody>label{
+    font-size: larger;
+    color: black;
+    font-weight: 400;
 }
 .BookBtn
 {
@@ -20,7 +41,6 @@
 .OfferBtn
 {
     position: relative;
-    z-index:9999;
     margin-left: 50px;
     height:160px;
     width:320px;

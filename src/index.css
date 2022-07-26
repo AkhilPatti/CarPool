@@ -16,3 +16,59 @@ code {
     monospace;
 }
 */
+.DailogueBoxbg
+{
+  border: solid 1px;
+  width: 20vw;
+  border-radius: 15px;
+  position: fixed;
+  margin-top: 30vh;
+  margin-left: 40%;
+}
+#YesDialogue
+{
+  width :100px;
+  height:45px;
+  margin: 15px;
+  border: none;
+  background-color: cornflowerblue;
+  color:white;
+  font-size:20px;
+  cursor:pointer;
+}
+.menuOptions
+{
+  font-weight: 600;
+  padding-left:2px;
+  height:26px;
+  padding-left: 20px;
+  width:"100px";
+  cursor: pointer;
+  border-top:none;
+  height: 30px;
+}
+.menuOptions:hover{
+  background-color: #7653fc;
+  color: white;
+}
+
+#NoDialogue
+{
+  width :100px;
+  height:45px;
+  margin: 15px;
+  border: none;
+  background-color: crimson;
+  color:white;
+  font-size:20px;
+  cursor:pointer;
+}
+.ModalContainer
+{
+  margin:15px;
+}
+.Headings
+{
+  font-weight: 700;
+  font-size: larger;
+}
