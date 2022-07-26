@@ -81,7 +81,7 @@ function LoginPage()
     return<>
         <div className="Login flex">
        <HomePic/>
-        <div style={{height:"98.5vh",width:"30%", backgroundColor:"#9319ff"}}>
+        <div id="LoginLeftContent" >
         <div style={{height:"4vh",marginTop:"3vh"}}><p  style={{display:"none",marginLeft:"35%"}}id="messageBlock">{message}</p></div>
             <div style={{height:"55vh"}}>
             <div style={{marginTop:"7vh", marginBottom:"3vh",}}><p className="SignUp">L<span style={{borderBottom:"solid white 2px", paddingBottom:"5px"}}>og I</span>n</p></div>

@@ -38,7 +38,7 @@
 .SignUp
 {
     /*position:relative;*/
-    width: fit-content;
+    width: fit-content; 
     margin:auto;
     font-weight: bold;
     font-size:35px;
@@ -58,3 +58,12 @@
     transition: 1s ease-in-out;
   }*/
   
+  @media screen and (max-width: 800px) {
+    .Login{
+      flex-direction: column;
+    }
+    #signUpLeftContent
+    {
+        width: 100% !important;;
+    }
+  }

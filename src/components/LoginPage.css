@@ -47,14 +47,19 @@
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
 }
-/*.SignUp:after {
-    content: "";
-    background: black;
-    position: absolute;
-    bottom: 0;
-    left: 20%;
-    height: 5px;
-    width: 60%;
-    transition: 1s ease-in-out;
-  }*/
-  
+
+@media screen and (max-width: 800px) {
+    .Login{
+      flex-direction: column;
+    }
+    #LoginLeftContent
+    {
+        width: 100% !important;;
+    }
+  }
+#LoginLeftContent
+{
+    height:"98.5vh";
+    width:"30%";
+    background-color:#9319ff;
+}

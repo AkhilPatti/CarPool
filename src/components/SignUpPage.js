@@ -68,8 +68,8 @@ function SignUpPage()
                     alert("confirm Password and password don't match");
                     return
                 }
-                let regex= new RegExp("^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])(?=.*[@#$%^&-+=()])(?=\\S+$).{8, 20}$");
-                if(!regex.test(password))
+                //let regex= new RegExp("^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])(?=.*[@#$%^&-+=()])(?=\\S+$).{8, 20}$");
+                if(password.length<8)
                 {
                     alert("Please Enter a Strong Password");
                     return;
@@ -106,7 +106,7 @@ function SignUpPage()
         <div className="Login flex">
         <HomePic/>
         
-        <div style={{width:"30%", backgroundColor:"rgba(255,172,25,255)"}}>
+        <div id="signUpLeftContent"style={{width:"30%", backgroundColor:"rgba(255,172,25,255)"}}>
         <div><p id="messageBlock" style={{fontSize:"10px"}}>{message}</p></div>
             <div style={{height:"58%"}}>
             

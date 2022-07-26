@@ -1,5 +1,6 @@
-import React,{useEffect, useNavigate ,useState,useContext} from 'react';
+import React,{useEffect,useState,useContext} from 'react';
 import "./BookARide.css";
+import { useNavigate } from 'react-router-dom';
 import AboutRide from "./AboutRide.js"
 import RideCard from "./RideCard.js";
 import "./RideCard.css";
